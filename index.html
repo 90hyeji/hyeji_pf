@@ -211,7 +211,21 @@
             </div>
             <div class="section section3">
                 <div class="sec03_wr">
-
+                    <nav >
+                        <div class="nav nav-tabs row mx-0" id="nav-tab" role="tablist">
+                            <button class="col nav-link active" id="tab01_tab1" data-toggle="tab" data-target="#tab01_1" type="button" role="tab" aria-selected="true">탭01_1</button>
+                            <button class="col nav-link" id="tab01_tab2" data-toggle="tab" data-target="#tab01_2" type="button" role="tab" aria-selected="false">탭01_2</button>
+                            <button class="col nav-link" id="tab01_tab3" data-toggle="tab" data-target="#tab01_3" type="button" role="tab" aria-selected="false">탭01_3</button>
+                            <button class="col nav-link" id="tab01_tab4" data-toggle="tab" data-target="#tab01_4" type="button" role="tab" aria-selected="false">탭01_4</button>
+                        </div>
+                    </nav>
+    
+                    <div class="tab-content" id="nav_Content01">
+                        <div class="tab-pane fade show active" id="tab01_1">탭01_1</div>
+                        <div class="tab-pane fade" id="tab01_2">탭01_2</div>
+                        <div class="tab-pane fade" id="tab01_3">탭01_3</div>
+                        <div class="tab-pane fade" id="tab01_4">탭01_4</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -223,7 +237,23 @@
             // Optional 
             anchors: ['section1', 'section2', 'section3'],
             menu: "#menu",
-            
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        document.querySelectorAll('.progressbar, .progressbar2, .progressbar3, .progressbar4').forEach(function(bar) {
+                            bar.classList.add('animate');
+                        });
+                        document.querySelector('#menu').classList.add('menu-active'); // 메뉴 색상 변경
+                    } else {
+                        document.querySelector('#menu').classList.remove('menu-active'); // 메뉴 색상 원래대로
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            observer.observe(document.querySelector('.section2'));
         });
     </script>
 
