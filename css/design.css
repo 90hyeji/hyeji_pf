@@ -265,31 +265,28 @@ li.skill  .d-flex{align-items: center;}
 }
 
 
-.sec03_wr{width: 100%;height: 100%; background-color: #333F4B;}
+.sec03_wr{width: 100%;height: 100%; background-color: #333F4B; display: flex; justify-content: center;}
+.sec03_wr .contain{padding-top: 160px;}
+.nav-tabs{border: 0;}
+.sec03_wr .nav-tabs li{margin-right: 26px;}
+.sec03_wr .nav-tabs li:last-child{margin-right: 0;}
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus{border: 0;}
+.nav-tabs .nav-link.active{position: relative;}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{border: 0; color: #fff; font-weight: 600;}
+.sec03_wr .nav-link{padding: 0; border: 0; font-size: 26px; color: #AFAFAF; font-weight: 300; text-transform: uppercase;}
+.nav-tabs .nav-link.active::after{content: ""; display: block; clear: both; width: 6px; height: 6px; border-radius: 50%; background-color: #fff; position: absolute; right: -6px; top: 0;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.tab-content{margin-top: 80px; position: relative; margin-left: -150px; margin-right: -150px;}
+.tab-content::before{content: 'PORTFOLIO'; display: block; clear: both; position: absolute; bottom: -220px; right: -100px; color: rgba(255, 255, 255, 0.3); font-weight: 900; font-size: 270px;}
+.sec03_Swiper .swiper-slide{background-color: rgba(255, 255, 255, 0.5); border-radius: 20px; padding: 40px 0 30px; backdrop-filter: blur(10px); display: flex; align-items: center; justify-content: center;}
+.swiper{padding: 0 150px;}
+.sec03_Swiper .item {width: 100%; padding: 0 60px; text-align: center;}
+.sec03_Swiper .item img{ max-width: 450px; width: 100%; margin-bottom: 30px;}
+.sec03_Swiper .item .d-flex{text-align: left; align-items: center; justify-content: space-between;}
+.sec03_Swiper .item .d-flex p{margin-bottom: 8px;}
+.sec03_Swiper .item .d-flex p:last-child{margin-bottom: 0;}
+.sec03_Swiper .item .d-flex p span{font-weight: 600;}
+.sec03_Swiper .item .d-flex a{display: flex; align-items: center; justify-content: center; background-color: #fff; width: 160px; height: 60px; border-radius: 160px; font-size: 18px; font-weight: 600;}
 
 
 
