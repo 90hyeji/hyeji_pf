@@ -289,7 +289,7 @@ li.skill  .d-flex{align-items: center;}
 .sec03_Swiper .pagination_wr{display: none;}
 .sec03_Swiper .item .d-flex .link_wr a{width: 110px;}
 
-
+.sec03_Swiper2 .swiper-slide:first-child .item img{max-width: 450px;}
 .sec03_Swiper2 .item img{max-width: 370px;}
 
 
